@@ -1,0 +1,9 @@
+<h1> Companies and Products</h1>
+<% @companies.each do |company| %>
+  Company Name: <%= company.name %>
+  <p>Products:</p>
+  <% company.products.each do |product| %>
+   <%= product.name %>
+  <% end %>
+  <hr>
+<% end %>
