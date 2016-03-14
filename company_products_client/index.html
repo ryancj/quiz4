@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Company Products Client</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="mustache.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <h1>Companies and Products</h1>
+
+     <script id="company-listing" type="x-tmpl-mustache">
+       <div href='javascript:void(0);' data-id="{{ id }}">{{ name }}<br>
+       Products: {{products}}</div>
+       <hr>
+     </script>
+
+     <div id="companies"></div>
+
+  </body>
+</html>
